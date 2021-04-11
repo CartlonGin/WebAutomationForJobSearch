@@ -57,7 +57,6 @@ for pageNumber in range(1, 30):
             for j in range(len(jobSkills)):
                 try:
                     if jobSkills[j].text.__contains__("Python") or jobSkills[j].text.__contains__("Java"):
-                        print("found!")
                         driver.implicitly_wait(10)
                         jobTitle = driver.find_element_by_class_name("ViewJobHeader-title")
                         print(jobTitle.text)
